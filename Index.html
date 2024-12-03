@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindful Meditation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="js01.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <h1>How mindful do you want to be today?</h1>
+    <div class="levels">
+      <div class="level" data-mindfulness="20" data-sound="rain.mp3">
+        <p>Minimally Mindful</p>
+        <span>20 Minutes</span>
+      </div>
+      <div class="level" data-mindfulness="40" data-sound="rain.mp3">
+        <p>Moderately Mindful</p>
+        <span>40 Minutes</span>
+      </div>
+      <div class="level extreme" data-mindfulness="60" data-sound="rain.mp3">
+        <p>Extremely Mindful</p>
+        <span>60 Minutes</span>
+      </div>
+    </div>
+    <div id="timer-container" class="hidden">
+      <h2 id="timer">00:00</h2>
+      <button id="stop-timer">Stop</button>
+    </div>
+    <audio id="meditation-audio" loop>
+      <source id="audio-source" src="" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
