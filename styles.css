@@ -1,117 +1,115 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background: #f0f4f8;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .app {
-    text-align: center;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background: #ffffff;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-  
-  .levels {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .level {
-    padding: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .level p {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .level span {
-    font-size: 14px;
-    color: #777;
-  }
-  
-  /* Colors for levels */
-  .level:nth-child(1) {
-    background: #d3e9ff;
-  }
-  
-  .level:nth-child(2) {
-    background: #b3ddff;
-  }
-  
-  .level.extreme {
-    background: #80cfff;
-  }
-  
-  /* Hover and bold effects */
-  .level:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .level:nth-child(1):hover {
-    background: #a0d1ff;
-  }
-  
-  .level:nth-child(2):hover {
-    background: #80c4ff;
-  }
-  
-  .level.extreme:hover {
-    background: #339bff;
-    font-weight: bold;
-  }
-  
-  #timer-container {
-    margin-top: 30px;
-  }
-  
-  #timer {
-    font-size: 48px;
-    color: #339bff;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 6px;
-    background: #339bff;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background: #267acc;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.app {
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.level {
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.level p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.level span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Colors for levels */
+.level:nth-child(1) {
+  background: #d3e9ff;
+}
+
+.level:nth-child(2) {
+  background: #b3ddff;
+}
+
+.level.extreme {
+  background: #80cfff;
+}
+
+/* Hover and bold effects */
+.level:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.level:nth-child(1):hover {
+  background: #a0d1ff;
+}
+
+.level:nth-child(2):hover {
+  background: #80c4ff;
+}
+
+.level.extreme:hover {
+  background: #339bff;
+  font-weight: bold;
+}
+
+#timer-container {
+  margin-top: 30px;
+}
+
+#timer {
+  font-size: 48px;
+  color: #339bff;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background: #339bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #267acc;
+}
+
+.hidden {
+  display: none;
+}
